@@ -2,6 +2,9 @@
 Simple game made in C++ and SDL2 
 
 # ScreenShots
+![image](https://github.com/user-attachments/assets/c16d58f5-13be-4deb-9f76-bf38eaeec2a0)
+![image](https://github.com/user-attachments/assets/d1c14b08-ff22-408c-9c99-6d3d2cd438c2)
+
 
 # Background 
 Multi-Blast is a space shooter game, where you control a green and red ship, and fight aliens that are red or green. The green ship can only kill the green aliens and the red ship can only kill the red aliens. Controls:  A - Move Left, D - Move Right, Left - Green Ship shoots, Right - Red Ship shoots.
