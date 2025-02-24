@@ -1,5 +1,5 @@
 # Multi-Blast
-Simple game made in C++ and SDL2.
+Simple game made in C++ and SDL2. It can be played in your web browser https://apm17.itch.io/multi-blast
 
 # ScreenShots
 ![image](https://github.com/user-attachments/assets/c16d58f5-13be-4deb-9f76-bf38eaeec2a0)
