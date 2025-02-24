@@ -172,7 +172,7 @@ void init()
     shipExplosion = Mix_LoadWAV("res/sounds/shipExplosion.wav");
     playerHit = Mix_LoadWAV("res/sounds/playerHit.wav");
     wrongColor = Mix_LoadWAV("res/sounds/wrongColor.wav");
-    menu = Mix_LoadWAV("res/sounds/Menu.mp3");
+    menu = Mix_LoadWAV("res/sounds/Menu.wav");
 
     player = new Player(235, 650, playerTex, playerHit);
 
@@ -1210,9 +1210,10 @@ int main(int argc, char* argv[])
     {
         std::cout << "SDL_Audio failed: " << Mix_GetError() << std::endl; 
     }
-        
+
     init(); 
-    gameLoop(); 
+    gameLoop();
+    
 
     return 0; 
 }
