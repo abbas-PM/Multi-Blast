@@ -792,12 +792,12 @@ void gameLoop()
                         break;
                     
                     case SDLK_LEFT: 
-                        if(!updateMovement[2] && dualCheck > 0 && playState && !pausedState) addBullet(0);
+                        if(!updateMovement[2] && dualCheck > 0 && playState && !pausedState && player->getLives() > 0) addBullet(0);
                         updateMovement[2] = true;
                         break; 
                     
                     case SDLK_RIGHT: 
-                        if(!updateMovement[3] && dualCheck > 0 && playState && !pausedState) addBullet(1);
+                        if(!updateMovement[3] && dualCheck > 0 && playState && !pausedState && player->getLives() > 0) addBullet(1);
                         updateMovement[3] = true;
                         break;
                     
@@ -1127,6 +1127,8 @@ void gameLoop()
             SDL_SetRenderDrawColor(window->getRenderer(), 0, 0, 0, 255);
 
             gameOverTimer++; 
+            if(gameOverTimer == 0) Mix_HaltChannel(-1);
+            
             if(gameOverTimer < 5) Mix_PlayChannel(-1, gameOver, 0);
 
             if(gameOverTimer < 70) handler->render(window->getRenderer(), pausedState);
